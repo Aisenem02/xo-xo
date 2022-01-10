@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Festive&family=Gelasio&family=Josefin+Sans:wght@700&family=Lato:ital,wght@0,400;1,300&family=Montserrat&family=Mulish:wght@300;400&family=Noto+Serif+Display:wght@100;200;400&family=Philosopher:wght@700&family=Poppins:wght@300&family=Raleway:ital,wght@0,300;1,200&family=Ribeye+Marrow&family=Roboto+Slab:wght@100;300&family=Roboto:ital,wght@0,400;1,300;1,400&family=Ubuntu:ital,wght@1,500;1,700&family=Zen+Old+Mincho&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --blue: #19849b;
+  --darkgrey: rgba(34, 49, 63);
+  --darkblue: rgba(22, 117, 138, 1);
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700 bold italic;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+}
+img {
+  height: 100%;
+  /* max-width: 100%; */
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--darkgrey);
+}
+.header {
+  height: 58px;
+  background-color: var(--blue);
+}
+.logo a img {
+  margin-left: 35%;
+  margin-top: 1.5%;
+}
+.main-block {
+}
+.text-block {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2%;
+}
+.text-block {
+  padding: 0.7% 6%;
+}
+
+.text-block h2,
+h3,
+p {
+  margin-bottom: 40px;
+}
+.main-block__btn {
+  width: 293px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--darkgrey);
+}
+.portfolio-block {
+  padding-top: 104px;
+  padding-bottom: 100px;
+}
+.portfolio-block__images img {
+  margin: 10px 10px;
+}
+.portfolio-block__text {
+  width: 70%;
+}
+.footer {
+  height: 205px;
+  background-color: var(--blue);
+}
+.footer-content {
+  margin-left: 40%;
+  padding-top: 10px;
+  display: flex;
+}
+.footer-subblock {
+  height: 44px;
+  background-color: var(--darkblue);
+}
+.footer__ava img {
+  border-radius: 50%;
+}
+.footer-block__phone {
+  margin-top: 23px;
+}
+.footer-block {
+  margin-left: 10%;
+}
+.footer-subblock small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
+}
+input[name="name"] {
+  width: 215px;
+  height: 55px;
+  background: #ffffff;
+  border: 1px solid #3d8b74;
+  margin-right: 22px;
+}
+input[name="email"] {
+  width: 323px;
+  height: 55px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+}
+input[name="comment"] {
+  width: 560px;
+  height: 144px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  margin-top: 18px;
+}
+#overlay {
+  display: none; /* hide modal initially */
+  position: absolute; /* position to allow modal to cover over it */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); /* gray out the background when modal appears */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#modal {
+  background-color: rgba(39, 42, 47, 1);
+  height: 586px;
+  width: 656px;
+  margin: 0 auto; /* center the modal */
+  padding: 0;
+  width: 600px;
+  text-align: center;
+  position: relative; /* set relative to overlay position */
+  top: 20%;
+  box-shadow: 10px 5px 5px #000; /* give modal a hover effect */
+}
+.form__btn {
+  width: 217px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background-color: rgba(39, 42, 47, 1);
+  color: #ffffff;
+  margin-top: 26px;
+ 
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+    padding: 8px;
+  }
+  .container {
+    width: 80%;
+    margin-top: 0 auto;
+  }
+
+  .main-block__img img {
+    width: 100%;
+  }
+  .text-block {
+    position: absolute;
+    top: 130%;
+    left: 10%;
+  }
+  .footer__ava img{
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 425px){
+.wrapper{
+  width: 100%;
+}
+.container{
+  width: 90%;
+}
+.footer-content{
+  margin-left: 5px;
+}
+}

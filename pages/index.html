@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <a href="#">
+                    <img src="../images/Lucas Montana.svg" alt="logo">
+                </a>
+            </div>
+        </header>
+        <div class="container">
+            <main class="main">
+                <div class="main-block">
+                    <div class="main-block__img">
+                        <img src="../images/main-photo.png" alt="Lucas Montana's main photo">
+                    </div>
+                    <div class="main-block__text-block text-block">
+                        <h2 class="text-block__heading">Hey. I'm Lucas
+                            And I'm a professional photographer</h2>
+                        <h3 class="text-block__subheading">Curabitur blanit tempus porttitor.
+                            Vollis ac inceptos mollisestor commodo luctus. </h3>
+                        <p class="text-block__text">Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor
+                            commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur
+                            ac,
+                            vestibulum at eros. Vestibulum id ligulas semper.
+                            Cum sociis natoque penatibus et magnis maecenas. Donec ullamcorper nulla non metus auctor
+                            fringilla. </p>
+                        <button class="main-block__btn" id="open-modal">Contact me</button>
+                        <div id="overlay">
+                            <div id="modal">
+
+                                <form class="form">
+                                    <div class="form-content">
+                                        <h3 class="form__heading"> Contact Me </h3>
+                                        <p>Curabitur blandit tempus porttitor. Vollis
+                                            ac inceptos mollisestor commodo luctus.
+                                            Curabitur blandit tempus porttitor. Morbi
+                                            leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                        <input type="text" name="name" placeholder="Your name">
+                                        <input type="text" name="email" placeholder="Your email">
+                                        <input type="text" name="comment">
+                                        <button class="form__btn">Send Message</button>
+                                    </div>
+                                </form>
+                                <button id="btn-close">Close</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </main>
+            <div class="portfolio-block">
+                <h3 class="portfolio-block__heading">Portfolio</h3>
+                <p class="portfolio-block__text">Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor
+                    commodo luctus.
+                    Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                </p>
+                <div class="portfolio-block__images" id="picture">
+                    <img src="../images/first-photo.png" alt="girl" id="img1" onclick="largeImg()">
+                    <img src="../images/second-photo.png" alt="girl" id="img2" onclick="largeImg()">
+                    <img src="../images/third-photo.png" alt="girl" id="img3" onclick="largeImg()">
+                    <img src="../images/fourth-photo.png" alt="girl" id="img4" onclick="largeImg()">
+                    <img src="../images/fifth-photo.png" alt="girl" id="img5" onclick="largeImg()">
+                    <img src="../images/sixth-photo.png" alt="girl" id="img6" onclick="largeImg()"> 
+                    <img src="../images/seventh-photo.png" alt="girl" id="img7" onclick="largeImg()">
+                    <img src="../images/eighth-photo.png" alt="girl" id="img8"  onclick="largeImg()">
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer__ava"><img src="../images/ava.svg" alt="avatar"></div>
+                <div class="footer-block">
+                    <div class="footer-block__logo">
+                        <a href="">
+                            <img src="../images/Lucas Montana.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="footer-block__text"></div>
+                    <p class="footer-block__phone">+4 768 25 25 255</p>
+                    <p class="footer-block__address">Poland, Warsaw</p>
+                </div>
+
+            </div>
+            <div class="footer-subblock">
+                <small>All rights reserved. “World Photos”, Inc</small>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
