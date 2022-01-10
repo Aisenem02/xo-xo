@@ -13,9 +13,9 @@ btn.addEventListener("click", openModal);
 
 closeBtn.addEventListener("click", closeModal);
 
-const img= document.getElementById("img1")
+
  
-function largeImg(){
+function largeImg(img){
     img.style.transform = "scale(1.5)";
         // Animation effect 
         img.style.transition = "transform 0.25s ease"
